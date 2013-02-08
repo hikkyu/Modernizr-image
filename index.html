@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test image</title>
+	<script type="text/javascript" src="modernizr.js"></script>
+</head>
+<body>
+	<p>Supportez vous les images ?</p>
+	<p id="respons"></p>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="modernizr-image.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			if(Modernizr.image){
+				$('#respons').text('oui');
+			}else{
+				$('#respons').text('non');
+			}
+		});
+	</script>
+</body>
+</html>
